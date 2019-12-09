@@ -1,12 +1,6 @@
 import React from 'react';
 
-interface TodoProps {
-    onClick: () => void,
-    completed: boolean,
-    text: string
-};
-
-const Todo = ({ onClick, completed, text }: TodoProps) => (
+const Todo = ({ onClick, completed, text }) => (
     <li
         onClick={onClick}
         style={{
