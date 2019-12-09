@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 // import { createStore } from 'redux';
 // import rootReducer from './reducers';
 import * as serviceWorker from './serviceWorker';
-import App from './components/App/App';
+import App from './components/App';
 
 import { addTodo } from './actions';
 
