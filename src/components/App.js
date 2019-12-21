@@ -1,9 +1,14 @@
 import React from 'react';
+import Footer from './Footer'
+import AddTodo from '../containers/AddTodo'
+import VisibleTodoList from '../containers/VisibleTodoList'
 
 function App() {
   return (
     <div>
-      123
+      <AddTodo />
+      <VisibleTodoList />
+      <Footer />
     </div>
   );
 }
