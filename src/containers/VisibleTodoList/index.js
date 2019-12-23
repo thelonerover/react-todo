@@ -1,7 +1,7 @@
 /* eslint-disable default-case */
 import { connect } from 'react-redux';
-import { toggleTodo } from '../actions';
-import TodoList from '../components/TodoList';
+import { toggleTodo } from '../../actions';
+import TodoList from '../../components/TodoList';
 
 const getVisibleTodos = (todos, filter) => {
     switch (filter) {
