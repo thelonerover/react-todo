@@ -6,6 +6,8 @@ import todoApp from './reducers'
 import App from './components/App'
 import * as serviceWorker from './serviceWorker';
 
+import './scss/main.scss';
+
 const store = createStore(todoApp);
 
 render(

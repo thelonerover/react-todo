@@ -11,6 +11,10 @@ export const toggleTodo = (id) => ({
     id
 });
 
+export const removeCompletedTodos = () => ({
+    type: "REMOVE_COMPLETED_TODOS"
+})
+
 export const setVisibilityFilter = (filter) => ({
     type: 'SET_VISIBILITY_FILTER',
     filter

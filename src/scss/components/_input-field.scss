@@ -1,0 +1,24 @@
+@import '../variables';
+@import '../functions';
+
+.input {
+    display: flex;
+    align-items: stretch;
+
+    &__field {
+        padding: size(1.5) size(2);
+        font-size: 1.25em;
+        background: none;
+        border: 1px solid $black;
+        outline: none;
+    }
+
+    &__btn {
+        padding: size(1.5) size(2);
+        font-size: 1.25em;
+        color: $main;
+        background-color: $black;
+        outline: none;
+        border: 1px solid $black;
+    }
+}

@@ -13,6 +13,8 @@ export const todos = (state = [], action) => {
             return state.map(todo => 
                 todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
             );
+        case 'REMOVE_COMPLETED_TODOS': 
+                return state.filter(todo => todo.completed );
         default: 
             return state;
     }
