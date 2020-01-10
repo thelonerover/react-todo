@@ -1,4 +1,4 @@
-@import '../variables';
+@import "../variables";
 
 .input {
     display: flex;
@@ -9,7 +9,7 @@
         flex-grow: 1;
         min-width: 4rem;
         padding: 0.75rem 1rem;
-        font-family: 'Rubik', sans-serif;
+        font-family: "Rubik", sans-serif;
         font-weight: 400;
         font-size: 1.75em;
         background: none;
@@ -19,7 +19,7 @@
 
     &__btn {
         padding: 0.75rem 1rem;
-        font-family: 'Rubik', sans-serif;
+        font-family: "Rubik", sans-serif;
         font-weight: 400;
         font-size: 1.75em;
         color: $main;

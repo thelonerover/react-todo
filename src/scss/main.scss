@@ -1,6 +1,9 @@
-@import './variables';
-@import './base';
-@import './layout';
+@import "./variables";
+@import "./base";
+@import "./layout";
 
-@import './components/input';
-@import './components/todoList';
+@import "./components/root";
+@import "./components/input";
+@import "./components/filter";
+@import "./components/todo-list";
+
