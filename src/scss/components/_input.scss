@@ -1,0 +1,30 @@
+@import '../variables';
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    &__field {
+        flex-grow: 1;
+        min-width: 4rem;
+        padding: 0.75rem 1rem;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 1.75em;
+        background: none;
+        border: 1px solid $black;
+        outline: none;
+    }
+
+    &__btn {
+        padding: 0.75rem 1rem;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 1.75em;
+        color: $main;
+        background-color: $black;
+        outline: none;
+        border: 1px solid $black;
+    }
+}

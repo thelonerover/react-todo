@@ -6,27 +6,25 @@ let AddTodo = ({ dispatch }) => {
     let input;
 
     return (
-        <div>
-            <form
-                class='input'
-                onSubmit={e => {
-                    e.preventDefault()
-                    if (!input.value.trim()) {
-                        return;
-                    }
-                    dispatch(addTodo(input.value))
-                    input.value = ''
+        <form
+            class='input'
+            onSubmit={e => {
+                e.preventDefault()
+                if (!input.value.trim()) {
+                    return;
+                }
+                dispatch(addTodo(input.value))
+                input.value = ''
+            }}
+        >
+            <input
+                class='input__field'
+                ref={node => {
+                    input = node
                 }}
-            >
-                <input
-                    class='input__field'
-                    ref={node => {
-                        input = node
-                    }}
-                />
-                <button class='input__btn' type="submit">Add</button>
-            </form>
-        </div>
+            />
+            <button class='input__btn' type="submit">Add</button>
+        </form>
     );
 }
 
