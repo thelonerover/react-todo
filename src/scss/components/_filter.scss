@@ -1,21 +1,11 @@
 .filter {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 1.25em;
     margin-bottom: 2rem;
 
     &__separator {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: 1.25em;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
-    }
-
-    &__link {
-        text-decoration: none;
-        color: $gray;
-    }
-
-    &__link_active {
-        text-decoration: underline;
-        color: $black;
     }
 }
