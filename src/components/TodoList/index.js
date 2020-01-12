@@ -4,8 +4,8 @@ import PropTypes from "prop-types"
 
 const TodoList = ({ todos, onTodoClick }) => (
     <ul class="todo-list">
-        {todos.map((todo, index) => (
-            <Todo key={index} {...todo} onClick={() => onTodoClick(index)} />
+        {todos.map((todo) => (
+            <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
         ))}
     </ul>
 );
