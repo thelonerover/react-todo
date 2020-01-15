@@ -10,6 +10,6 @@ const Footer = () => (
     <span className="filter__separator">/</span>
     <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>Completed</FilterLink>
   </div>
-)
+);
 
 export default Footer;

@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { removeCompletedTodos } from "../../actions";
 import RemoveCompleted from "../../components/RemoveCompleted";
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
     return {
         onClick: () => {
             dispatch(removeCompletedTodos());
