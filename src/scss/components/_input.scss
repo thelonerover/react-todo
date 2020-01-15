@@ -5,6 +5,7 @@
     justify-content: space-between;
 
     &__field {
+        display: inline-block;
         flex-grow: 1;
         min-width: 2rem;
         padding: 0.75rem 1rem;
@@ -13,10 +14,13 @@
         font-size: 1.75em;
         background: none;
         border: 1px solid $black;
+        border-radius: 0;
+        box-shadow: unset;
         outline: none;
     }
 
     &__btn {
+        display: inline-block;
         padding: 0.75rem 1rem;
         font-family: "Rubik", sans-serif;
         font-weight: 400;
@@ -25,6 +29,13 @@
         background-color: $black;
         outline: none;
         border: 1px solid $black;
+
+        transition: .1s ease-in;
+
+        &:hover {
+            background-color: $l-black;
+            border: 1px solid $l-black;
+        }
     }
 }
 

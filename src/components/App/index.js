@@ -7,7 +7,7 @@ import RemoveCompletedLink from "../../containers/RemoveCompletedLink"
 
 function App({ hasTodos, hasCompleted }) {
     return (
-      <div className="container">
+      <div className="container container_centered">
         <Input />
         {hasTodos && <Filter />}
         {hasTodos && <VisibleTodoList />}

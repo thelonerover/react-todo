@@ -1,0 +1,10 @@
+@keyframes appear {
+    from { 
+        margin-bottom: -1rem;
+        opacity: 0;
+    }
+    to { 
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}

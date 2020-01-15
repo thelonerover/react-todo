@@ -1,15 +1,16 @@
 .root {
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
+    width: 100%;
 }
 
 .container {
-    width: 100%;
     max-width: 600px;
-    margin: 0 auto;
     padding: 9rem 2rem;
     box-sizing: content-box;
+    
+    &_centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 600px) {
