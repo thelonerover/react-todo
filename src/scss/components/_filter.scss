@@ -10,3 +10,14 @@
         margin-right: 0.5rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .filter {
+        margin-bottom: 1.5rem;
+        margin-top: 3.5rem;
+    
+        &__separator {
+            font-size: 1em;
+        }
+    }
+}

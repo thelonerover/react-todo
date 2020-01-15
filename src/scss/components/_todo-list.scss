@@ -20,3 +20,14 @@
         text-decoration: line-through;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .todo-list {
+        margin-bottom: 1.5rem;
+        
+        &__item {
+            font-size: 1.5rem;
+            padding: .5rem 1rem;
+        }
+    }
+}
