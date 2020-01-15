@@ -6,14 +6,11 @@ import VisibleTodoList from "../../containers/VisibleTodoList"
 import RemoveCompletedLink from "../../containers/RemoveCompletedLink"
 
 function App({ hasTodos, hasCompleted }) {
-  console.log(hasTodos);
     return (
       <div className="container">
         <Input />
-        {hasTodos && 
-          [<Filter />,
-          <VisibleTodoList />]
-        }
+        {hasTodos && <Filter />}
+        {hasTodos && <VisibleTodoList />}
         {hasCompleted && <RemoveCompletedLink />}
       </div>
     )
