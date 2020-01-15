@@ -1,14 +1,8 @@
 import { connect } from "react-redux";
 import { removeCompletedTodos } from "../../actions";
-import Link from "../../components/Link";
+import RemoveCompleted from "../../components/RemoveCompleted";
 
-const mapStateToProps = (state, ownProps) => {
-    return {
-        active: ownProps.filter === state.visibilityFilter
-    }
-}
-
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
     return {
         onClick: () => {
             dispatch(removeCompletedTodos());
@@ -17,8 +11,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 const FilterLink = connect(
-    mapStateToProps,
+    null,
     mapDispatchToProps
-)(Link);
+)(RemoveCompleted);
 
 export default FilterLink;
